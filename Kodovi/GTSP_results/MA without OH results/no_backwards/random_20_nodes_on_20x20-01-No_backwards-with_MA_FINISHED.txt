@@ -1,0 +1,16 @@
+Best_solution: {3, 197, 37, 307, 66, 152, 138, 250, 122, 280, 271, 288, 49, 102, 166, 228, 31, 223, 81, 177, 3}
+cost: 684.113
+*total_elapsed_time: 2921.89 s
+**generating: 986.322 s
+***semirandom_construction: 984.603 s
+***reproduction: 0 s
+***crossover: 1.393 s
+***mutation: 0.326 s
+**improving: 1930.75 s
+***inserts: 1254.07 s
+***direct_two_opt: 19.788 s
+***two_opt: 288.025 s
+***two_neighbour_swaps: 34.138 s
+***three_neighbour_swaps: 62.429 s
+***four_neighbour_swaps: 260.068 s
+***optimizeHeadings: 12.235 s

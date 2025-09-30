@@ -1,0 +1,16 @@
+Best_solution: {14, 111, 293, 54, 278, 230, 218, 204, 171, 79, 114, 258, 307, 249, 42, 186, 136, 144, 29, 94, 14}
+cost: 687.311
+*total_elapsed_time: 2509.8 s
+**generating: 892.772 s
+***semirandom_construction: 891.531 s
+***reproduction: 0 s
+***crossover: 0.993 s
+***mutation: 0.248 s
+**improving: 1612.11 s
+***inserts: 1039.7 s
+***direct_two_opt: 16.023 s
+***two_opt: 242.651 s
+***two_neighbour_swaps: 28.567 s
+***three_neighbour_swaps: 52.711 s
+***four_neighbour_swaps: 219.976 s
+***optimizeHeadings: 12.482 s

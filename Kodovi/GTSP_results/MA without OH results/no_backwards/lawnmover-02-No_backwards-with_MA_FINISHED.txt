@@ -1,0 +1,16 @@
+Best_solution: {10, 76, 140, 206, 208, 224, 242, 180, 116, 54, 42, 109, 170, 150, 83, 22, 10}
+cost: 656.463
+*total_elapsed_time: 1333.61 s
+**generating: 522.978 s
+***semirandom_construction: 522.141 s
+***reproduction: 0 s
+***crossover: 0.652 s
+***mutation: 0.185 s
+**improving: 807.754 s
+***inserts: 545.645 s
+***direct_two_opt: 7.077 s
+***two_opt: 102.163 s
+***two_neighbour_swaps: 14.483 s
+***three_neighbour_swaps: 25.744 s
+***four_neighbour_swaps: 104.474 s
+***optimizeHeadings: 8.168 s

@@ -1,0 +1,3 @@
+Finished! Best solution: {10, 157, 125, 28, 42, 136, 103, 88, 167, 70, 55, 186, 10}
+cost: 411.131
+Total time: 96.668 s

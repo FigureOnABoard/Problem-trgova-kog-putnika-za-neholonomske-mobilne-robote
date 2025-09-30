@@ -1,0 +1,3 @@
+Finished! Best solution: {11, 26, 56, 106, 126, 45, 75, 88, 11}
+cost: 296.566
+Total time: 20.736 s

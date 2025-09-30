@@ -1,0 +1,16 @@
+Best_solution: {12, 83, 114, 45, 75, 104, 57, 25, 12}
+cost: 313.585
+*total_elapsed_time: 70.5 s
+**generating: 43.694 s
+***semirandom_construction: 43.585 s
+***reproduction: 0 s
+***crossover: 0.094 s
+***mutation: 0.015 s
+**improving: 26.036 s
+***inserts: 16.407 s
+***direct_two_opt: 0.312 s
+***two_opt: 1.617 s
+***two_neighbour_swaps: 0.719 s
+***three_neighbour_swaps: 1.239 s
+***four_neighbour_swaps: 3.978 s
+***optimizeHeadings: 1.764 s

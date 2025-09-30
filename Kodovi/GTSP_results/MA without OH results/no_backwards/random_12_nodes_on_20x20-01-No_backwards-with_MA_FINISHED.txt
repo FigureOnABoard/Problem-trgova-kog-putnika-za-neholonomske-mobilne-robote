@@ -1,0 +1,16 @@
+Best_solution: {11, 184, 103, 35, 146, 68, 27, 140, 169, 122, 49, 84, 11}
+cost: 435.762
+*total_elapsed_time: 269.903 s
+**generating: 178.731 s
+***semirandom_construction: 178.587 s
+***reproduction: 0 s
+***crossover: 0.128 s
+***mutation: 0.016 s
+**improving: 90.714 s
+***inserts: 56.904 s
+***direct_two_opt: 0.966 s
+***two_opt: 9.112 s
+***two_neighbour_swaps: 2.032 s
+***three_neighbour_swaps: 3.483 s
+***four_neighbour_swaps: 14.011 s
+***optimizeHeadings: 4.206 s

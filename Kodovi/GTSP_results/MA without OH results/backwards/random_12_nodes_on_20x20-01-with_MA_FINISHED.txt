@@ -1,0 +1,3 @@
+Finished! Best solution: {2, 177, 81, 52, 97, 112, 162, 130, 32, 30, 66, 148, 2}
+cost: 342.911
+Total time: 103.769 s

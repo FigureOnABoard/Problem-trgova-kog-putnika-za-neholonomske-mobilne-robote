@@ -1,0 +1,16 @@
+Best_solution: {2, 148, 118, 187, 61, 46, 111, 25, 138, 89, 167, 68, 2}
+cost: 530.741
+*total_elapsed_time: 451.405 s
+**generating: 196.822 s
+***semirandom_construction: 196.418 s
+***reproduction: 0 s
+***crossover: 0.335 s
+***mutation: 0.069 s
+**improving: 252.615 s
+***inserts: 169.774 s
+***direct_two_opt: 2.387 s
+***two_opt: 25.513 s
+***two_neighbour_swaps: 5.036 s
+***three_neighbour_swaps: 9.172 s
+***four_neighbour_swaps: 35.36 s
+***optimizeHeadings: 5.373 s

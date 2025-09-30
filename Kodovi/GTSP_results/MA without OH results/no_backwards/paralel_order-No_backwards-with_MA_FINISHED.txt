@@ -1,0 +1,16 @@
+Best_solution: {13, 67, 84, 100, 117, 59, 44, 28, 13}
+cost: 217.46
+*total_elapsed_time: 62.757 s
+**generating: 43.265 s
+***semirandom_construction: 43.175 s
+***reproduction: 0 s
+***crossover: 0.072 s
+***mutation: 0.018 s
+**improving: 19.235 s
+***inserts: 11.629 s
+***direct_two_opt: 0.182 s
+***two_opt: 1.439 s
+***two_neighbour_swaps: 0.535 s
+***three_neighbour_swaps: 0.791 s
+***four_neighbour_swaps: 2.93 s
+***optimizeHeadings: 1.729 s

@@ -1,0 +1,16 @@
+Best_solution: {10, 92, 172, 254, 258, 181, 98, 210, 133, 50, 78, 156, 236, 314, 295, 278, 196, 116, 38, 25, 10}
+cost: 879.602
+*total_elapsed_time: 3920.85 s
+**generating: 1036.04 s
+***semirandom_construction: 1033.64 s
+***reproduction: 0 s
+***crossover: 1.941 s
+***mutation: 0.454 s
+**improving: 2878.39 s
+***inserts: 1916.14 s
+***direct_two_opt: 27.145 s
+***two_opt: 414.696 s
+***two_neighbour_swaps: 48.157 s
+***three_neighbour_swaps: 88.868 s
+***four_neighbour_swaps: 369.704 s
+***optimizeHeadings: 13.682 s

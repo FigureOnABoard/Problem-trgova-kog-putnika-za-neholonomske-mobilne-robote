@@ -1,0 +1,16 @@
+Best_solution: {11, 76, 140, 204, 270, 272, 288, 306, 244, 180, 116, 53, 43, 108, 172, 235, 213, 148, 84, 21, 11}
+cost: 779.525
+*total_elapsed_time: 2430.99 s
+**generating: 926.636 s
+***semirandom_construction: 925.424 s
+***reproduction: 0 s
+***crossover: 0.993 s
+***mutation: 0.219 s
+**improving: 1499.46 s
+***inserts: 978.886 s
+***direct_two_opt: 14.206 s
+***two_opt: 223.687 s
+***two_neighbour_swaps: 25.845 s
+***three_neighbour_swaps: 47.455 s
+***four_neighbour_swaps: 196.997 s
+***optimizeHeadings: 12.384 s

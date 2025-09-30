@@ -1,0 +1,16 @@
+Best_solution: {11, 185, 89, 215, 165, 228, 19, 76, 154, 43, 108, 57, 114, 242, 129, 206, 11}
+cost: 479.203
+*total_elapsed_time: 1270.37 s
+**generating: 417.028 s
+***semirandom_construction: 416.048 s
+***reproduction: 0 s
+***crossover: 0.767 s
+***mutation: 0.213 s
+**improving: 849.325 s
+***inserts: 559.569 s
+***direct_two_opt: 7.996 s
+***two_opt: 106.446 s
+***two_neighbour_swaps: 16.885 s
+***three_neighbour_swaps: 29.484 s
+***four_neighbour_swaps: 122.062 s
+***optimizeHeadings: 6.883 s
