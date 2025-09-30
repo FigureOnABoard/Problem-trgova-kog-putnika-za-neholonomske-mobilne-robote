@@ -26,7 +26,7 @@ using namespace std;
 
 /*
     Program koristi memetički algoritam (engl. memetic algorithm) sličan onomu napravljenom u
-    (Guti G. i Karapeyan D. A Memetic Algorithm for the Generalized Traveling Salesman Problem),
+    (Gutin, G. i Karapetyan, D. A Memetic Algorithm for the Generalized Traveling Salesman Problem),
     te je napravljen za planiranje puta neholonomskog robota kod kojeg svaki čvor koji treba posjetiti
     definira skup stanja.
     Unaprijed je definiran broj usmjerenja u koje robot može doći i on iznosi 16.
