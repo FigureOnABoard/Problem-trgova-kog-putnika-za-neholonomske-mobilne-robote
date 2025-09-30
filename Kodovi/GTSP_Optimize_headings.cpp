@@ -22,8 +22,16 @@ Program preuzima rješenje TSP-a i iz njega napravi rješenje GTSP-a koje ima is
 /*
 Program se pokreće ovako: GTSP_Optimize_headings.exe datoteka1 datoteka2 [backwards_flag]
 gdje je "datoteka1" datoteka s podacima o problemu koju je napravio Cast_Data_Holder iz koje se definira problem, "datoteka2" datoteka u koju se sprema rješenja ovog programa,
-a [backwards_flag] zastavica koja označava može li se robot kretati unatrag ili ne. Ako je [backwards_flag] jednak 0, ne može se kretati unatrag, a ako je 1 onda se može kretati
-unatrag. Ako se [backwards_flag] ne unese, automatski se postavlja na 1.
+a [backwards_flag] zastavica koja označava može li se robot kretati unatrag ili ne.
+"datoteka1" sadrži put do datoteke i sam naziv datoteke, npr. "results_costs/primjeri_za_usporedbu/paralel_order.txt"
+"datoteka2" sadrži samo naziv datoteke, npr. "paralel_order-res.txt". "datoteka2" će uvijek biti kreirana u "GTSP_results/Decoupled-OH results/"
+Ako je [backwards_flag] jednak 0, ne može se kretati unatrag, a ako je 1 onda se može kretati unatrag. Ako se [backwards_flag] ne unese, automatski se postavlja na 1.
+
+Konačni rezultat će biti smješten u mapi "GTSP_results/Decoupled-OH results/backwards/" ili ""GTSP_results/Decoupled-OH results/no_backwards/", ovisno o vrijednosti
+[backwards_flag].
+
+Primjer: Ako se za "datoteka1" unese "results_costs/primjeri_za_usporedbu/paralel_order", za "datoteka2" unese "paralel_order-res.txt" te za "backwards_flag" unese "0",
+podaci o problemu će se učitati iz "results_costs/primjeri_za_usporedbu/paralel_order", a rješenje će se spremiti u "GTSP_results/Decoupled-OH results/no_backwards/paralel_order-res.txt"
 */
 
 // Stvara i vraća vektor s koordinatama čvorova koje će se morati nalaziti na robotovom putu.
@@ -161,7 +169,7 @@ int main(int argc, char *argv[]) {
     // Zapisivanje konačnog rezultata
     string output_file_name = argv[2];
     if (backwards_flag == 0)
-        output_file_name = "NO_backwards/" + output_file_name;
+        output_file_name = "no_backwards/" + output_file_name;
     else
         output_file_name = "backwards/" + output_file_name;
     ofstream f("GTSP_results/Decoupled-OH results/" + output_file_name);
