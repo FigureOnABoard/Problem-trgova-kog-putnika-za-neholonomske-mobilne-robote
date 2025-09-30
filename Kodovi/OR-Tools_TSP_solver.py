@@ -5,6 +5,14 @@ import sys
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 
+"""
+Program koristi OR-Tools za rješavanje problema trgovačkog putnika.
+Dobiveno rješenje sprema se u "GTSP_results/TSP_result.txt" kako bi ga dalje mogaao koristiti GTSP_Optimize_headings.
+
+Program se pokreće: python OR-Tools_TSP_solver.py datoteka
+gdje je "datoteka" datoteka koju je napravio Costs_Data_Holder koja sadrži podatke o problemu."
+"""
+
 def create_data_model():
     data = {}
     # Točke za posjetiti
