@@ -25,15 +25,14 @@
 using namespace std;
 
 /*
-    Program koristi memetski algoritam (engl. memetic algorithm) napravljen prema algoritmu
-    prema (Guti G. i Karapeyan D. A memetic algorithm for the generalized traveling salesman problem)
+    Program koristi memetički algoritam (engl. memetic algorithm) sličan onomu napravljenom u
+    (Guti G. i Karapeyan D. A Memetic Algorithm for the Generalized Traveling Salesman Problem),
     te je napravljen za planiranje puta neholonomskog robota kod kojeg svaki čvor koji treba posjetiti
     definira skup stanja.
     Unaprijed je definiran broj usmjerenja u koje robot može doći i on iznosi 16.
     Program ima definiranu listu čvorova (x_i, y_i) koje robot mora posjetiti. Drugim rječima, svaki čvor ima svoj jedinstven indeks.
-    Program ima definiranu listu svih stanja (indeks_cvora, phi_i). Drugim rječima, svako stanje ima svoj jedistven indeks.
-    Program ima definiranu gornjetrokutastu matricu udaljenosti čiji elementi na položaju (i, j) su cijene putanje
-    između stanja definiranim indeksima i i j.
+    Program ima definiranu listu svih stanja (x_i, y_i, phi_i). Drugim rječima, svako stanje ima svoj jedistven indeks.
+    Program rješeva generalizirani problem trgovačkog putnika u kojem mora posjetiti točno jedno stanje iz svakog čvora.
 */
 
 /*
@@ -41,10 +40,15 @@ using namespace std;
     optimize_headings_flag može biti 0 ili 1. 0 Označava da se neće provoditi optimizeHeadings() tijekom local_improvement_search(), a 1 da hoće.
     input_file je datoteka (ime i put do datoteke) koju je napravio Cost_Data_Holder koja sadrži podatke o problemu.
     output_file je osnovni oblik naziva datoteke u koju će se spremati rezultati koji ukljućuju sve generacije i konačno rješenje. Datoteka će se uvijek
-    spremati u mapu generations i imat će dodatak koji označava o kojoj je generaciji riječ. Ovisno o vrijednosti optimizeHeadings, lokacija i ime zajedno
-    će imati oblik: "generations/with_optimizeHeadings/output_file-with_MA_gen{i}.txt" ili ""generations/without_optimizeHeadings/output_file-with_MA_gen{i}.txt"" gdje
-    je {i} redni broj generacije (ako datoteka sadrži podatke o generaciji {i}), ili oblik: "generations/with_optimizeHeadings/output_file-with_MA_FINISHED.txt" ili
-    "generations/without_optimizeHeadings/output_file-with_MA_FINISHED.txt" (ako sadrži podatke o konačnom rješenju).
+    spremati u mapu generations i imat će dodatak koji označava o kojoj je generaciji riječ. Ovisno o vrijednostima optimize_headings_flag i backwards_flag, lokacija
+    i ime imat će zajedno oblik:
+        "generations/with_optimizeHeadings/backwards/output_file-with_MA_gen{i}.txt" za optimize_headings_flag = 1 i backwards_flag = 1,
+        "generations/with_optimizeHeadings/no_backwards/output_file-with_MA_gen{i}.txt" za optimize_headings_flag = 1 i backwards_flag = 0,
+        "generations/without_optimizeHeadings/backwards/output_file-with_MA_gen{i}.txt" za optimize_headings_flag = 0 i backawrds_flag = 1,
+        "generations/without_optimizeHeadings/no_backwards/output_file-with_MA_gen{i}.txt" za optimize_headings_flag = 0 i backwards_flag = 0,
+    gdje je {i} redni broj generacije. Umjesto "output_file-with_MA_gen{i}.txt" stajat će "output_file-with_MA_FINISHED.txt" ako je riječ o datoteci koja sadrži
+    podatke o konačnom rješenju ili će stajati "output_file-end_OH.txt" ako je riječ o datoteci s podacima o optimizaciji posljednjeg rjepenja kad se ne koristi
+    optimizeHeadings u svakoj iteraciji (optimize_headings_flag = 0).
     [backwards_flag] može biti 0 ili 1. 0 onačava da se robot ne može kretati unatrag, a 1 da može. Ako se niti jedna vrijednost ne unese, [backwards_flag] se
     automatski postavlja na 1.
 */
@@ -1353,19 +1357,30 @@ int main(int argc, char *argv[]) {
     // Ako je optimize_headings_flag = 0, local_improvement_procedure_for_symmetric() neće izvoditi optimizeHeadings().
     int optimize_headings_flag = stoi(argv[1]), backwards_flag = 1;
     string input_file = argv[2], output_file = argv[3];
-    if (argc >= 5)
+    if (argc >= 5) {
         backwards_flag = stoi(argv[4]);
+        if (backwards_flag < 0 || backwards_flag > 1) {
+            cerr << "GREŠKA! Kao zastava backwards_flag unesena je vrijednost " << backwards_flag << endl;
+            exit(1);
+        }
+    }
 
     if (optimize_headings_flag < 0 || optimize_headings_flag > 1) {
         cerr << "GREŠKA! Kao zastava optimize_headings_flag unesena je vrijednost " << optimize_headings_flag << endl;
         exit(1);
     }
-    // Ovisno o tome koristi li se optimizeHeadings ili ne, datoteka će se spremiti u drugi folder
-    if (optimize_headings_flag == 0) {
-        output_file = "without_optimizeHeadings\\" + output_file;
+    // Ovisno o tome koristi li se optimizeHeadings ili ne te može li se robot kretati untrag ili ne, datoteka će se spremiti u drugi folder
+    if (optimize_headings_flag == 0 && backwards_flag == 0) {
+        output_file = "without_optimizeHeadings\\no_backwards\\" + output_file;
     }
-    else {
-        output_file = "with_optimizeHeadings\\" + output_file;
+    else if (optimize_headings_flag == 0 && backwards_flag == 1) {
+        output_file = "without_optimizeHeadings\\backwards\\" + output_file;
+    }
+    else if (optimize_headings_flag == 1 && backwards_flag == 0) {
+        output_file = "with_optimizeHeadings\\no_backwards\\" + output_file;
+    }
+    else if (optimize_headings_flag == 1 && backwards_flag == 1) {
+        output_file = "with_optimizeHeadings\\backwards\\" + output_file;
     }
 
     // Provjera može li se spremati output_file u lokaciju u koja je navedena
@@ -1464,6 +1479,7 @@ int main(int argc, char *argv[]) {
 
         // Spremanje vremena utrošenog na optimizeHeadings()
         print_and_save_OH_at_end(best_solution, output_file + "-with_MA", v_th[v_th.size() - 1]);
+        cout << endl;
     }
 
     // Ispis i spremanje rezultata
