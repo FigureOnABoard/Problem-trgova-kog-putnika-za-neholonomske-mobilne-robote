@@ -9,8 +9,8 @@ from ortools.constraint_solver import pywrapcp
 Program koristi OR-Tools za rješavanje problema trgovačkog putnika.
 Dobiveno rješenje sprema se u "GTSP_results/TSP_result.txt" kako bi ga dalje mogaao koristiti GTSP_Optimize_headings.
 
-Program se pokreće: python OR-Tools_TSP_solver.py datoteka
-gdje je "datoteka" datoteka koju je napravio Costs_Data_Holder koja sadrži podatke o problemu."
+Program se pokreće: python OR-Tools_TSP_solver.py input_file
+gdje je "input_file" datoteka koju je napravio Costs_Data_Holder koja sadrži podatke o problemu."
 """
 
 def create_data_model():
@@ -111,8 +111,8 @@ def save_solution(locations, execution_time, filename, manager, routing, solutio
 def main():
     if (len(sys.argv) < 2):
         print("GRESKA TIJEKOM POKRETANJA PROGRAMA! Nije predan dovoljan broj argumenata.")
-        print("program se pokreće: python OR-Tools.py datoteka")
-        print("gdje je \"datoteka\" datoteka koju je napravio Costs_Data_Holder koja sadrži podatke o problemu.")
+        print("program se pokreće: python OR-Tools.py input_file")
+        print("gdje je \"input_file\" datoteka koju je napravio Costs_Data_Holder koja sadrži podatke o problemu.")
         sys.exit(1)
     data = read_problem_from_file(sys.argv[1])
     
