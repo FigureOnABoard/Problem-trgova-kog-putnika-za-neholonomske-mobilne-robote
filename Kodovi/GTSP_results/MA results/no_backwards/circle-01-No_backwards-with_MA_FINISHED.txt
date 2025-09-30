@@ -1,0 +1,16 @@
+Best_solution: {0, 52, 40, 28, 0}
+cost: 213.712
+*total_elapsed_time: 2.827 s
+**generating: 1.154 s
+***semirandom_construction: 1.154 s
+***reproduction: 0 s
+***crossover: 0 s
+***mutation: 0 s
+**improving: 1.655 s
+***inserts: 0.016 s
+***direct_two_opt: 0 s
+***two_opt: 0 s
+***two_neighbour_swaps: 0 s
+***three_neighbour_swaps: 0 s
+***four_neighbour_swaps: 0 s
+***optimizeHeadings: 1.639 s

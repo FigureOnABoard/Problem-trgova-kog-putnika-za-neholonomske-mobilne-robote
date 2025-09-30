@@ -1,0 +1,16 @@
+Best_solution: {5, 280, 186, 122, 267, 95, 97, 212, 70, 230, 137, 306, 290, 207, 153, 58, 250, 45, 31, 162, 5}
+cost: 643.253
+*total_elapsed_time: 17662.9 s
+**generating: 797.928 s
+***semirandom_construction: 796.067 s
+***reproduction: 0 s
+***crossover: 1.492 s
+***mutation: 0.369 s
+**improving: 16855.7 s
+***inserts: 1480.8 s
+***direct_two_opt: 21.784 s
+***two_opt: 317.274 s
+***two_neighbour_swaps: 41.13 s
+***three_neighbour_swaps: 77.109 s
+***four_neighbour_swaps: 319.752 s
+***optimizeHeadings: 14597.8 s

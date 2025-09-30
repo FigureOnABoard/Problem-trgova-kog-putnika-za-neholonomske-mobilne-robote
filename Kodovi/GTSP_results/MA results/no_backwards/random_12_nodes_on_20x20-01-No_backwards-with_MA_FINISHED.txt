@@ -1,0 +1,3 @@
+Finished! Best solution: {11, 184, 103, 168, 122, 49, 84, 35, 146, 68, 27, 142, 11}
+cost: 398.638
+Total time: 523.45 s

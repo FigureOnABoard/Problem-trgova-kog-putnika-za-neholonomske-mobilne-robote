@@ -1,0 +1,16 @@
+Best_solution: {3, 29, 92, 156, 221, 227, 164, 100, 35, 61, 124, 188, 252, 314, 296, 280, 262, 196, 132, 68, 3}
+cost: 779.525
+*total_elapsed_time: 10804.5 s
+**generating: 1059.15 s
+***semirandom_construction: 1058.32 s
+***reproduction: 0 s
+***crossover: 0.678 s
+***mutation: 0.152 s
+**improving: 9741.78 s
+***inserts: 746.933 s
+***direct_two_opt: 10.7 s
+***two_opt: 165.642 s
+***two_neighbour_swaps: 18.938 s
+***three_neighbour_swaps: 35.255 s
+***four_neighbour_swaps: 146.91 s
+***optimizeHeadings: 8617.4 s

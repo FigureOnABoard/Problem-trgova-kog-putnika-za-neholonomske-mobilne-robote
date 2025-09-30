@@ -1,0 +1,16 @@
+Best_solution: {10, 186, 78, 130, 34, 18, 106, 88, 167, 52, 126, 156, 10}
+cost: 514.831
+*total_elapsed_time: 3119.11 s
+**generating: 181.181 s
+***semirandom_construction: 180.879 s
+***reproduction: 0 s
+***crossover: 0.248 s
+***mutation: 0.054 s
+**improving: 2936.13 s
+***inserts: 125.864 s
+***direct_two_opt: 1.634 s
+***two_opt: 18.205 s
+***two_neighbour_swaps: 4.084 s
+***three_neighbour_swaps: 6.45 s
+***four_neighbour_swaps: 25.581 s
+***optimizeHeadings: 2754.31 s

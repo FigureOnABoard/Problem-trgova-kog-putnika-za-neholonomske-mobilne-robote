@@ -1,0 +1,3 @@
+Finished! Best solution: {10, 59, 175, 80, 98, 26, 42, 138, 69, 180, 126, 156, 10}
+cost: 511.768
+Total time: 3921.28 s

@@ -1,0 +1,16 @@
+Best_solution: {12, 84, 98, 67, 37, 122, 58, 25, 12}
+cost: 310.387
+*total_elapsed_time: 527.826 s
+**generating: 42.183 s
+***semirandom_construction: 42.121 s
+***reproduction: 0 s
+***crossover: 0.057 s
+***mutation: 0.005 s
+**improving: 485.214 s
+***inserts: 12.767 s
+***direct_two_opt: 0.111 s
+***two_opt: 1.173 s
+***two_neighbour_swaps: 0.57 s
+***three_neighbour_swaps: 1.092 s
+***four_neighbour_swaps: 3.01 s
+***optimizeHeadings: 466.491 s

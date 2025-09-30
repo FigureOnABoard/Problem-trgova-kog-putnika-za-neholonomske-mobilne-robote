@@ -1,0 +1,16 @@
+Best_solution: {10, 74, 131, 177, 51, 230, 38, 214, 158, 30, 174, 94, 111, 260, 276, 249, 203, 317, 299, 122, 10}
+cost: 630.966
+*total_elapsed_time: 10396.9 s
+**generating: 837.074 s
+***semirandom_construction: 835.935 s
+***reproduction: 0 s
+***crossover: 0.902 s
+***mutation: 0.237 s
+**improving: 9555.17 s
+***inserts: 944.429 s
+***direct_two_opt: 13.877 s
+***two_opt: 199.139 s
+***two_neighbour_swaps: 24.033 s
+***three_neighbour_swaps: 44.888 s
+***four_neighbour_swaps: 186.057 s
+***optimizeHeadings: 8142.75 s

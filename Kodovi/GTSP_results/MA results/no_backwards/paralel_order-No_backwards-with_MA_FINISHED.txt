@@ -1,0 +1,16 @@
+Best_solution: {5, 20, 36, 51, 125, 108, 92, 75, 5}
+cost: 217.46
+*total_elapsed_time: 247.897 s
+**generating: 42.936 s
+***semirandom_construction: 42.905 s
+***reproduction: 0 s
+***crossover: 0.016 s
+***mutation: 0.015 s
+**improving: 204.877 s
+***inserts: 5.588 s
+***direct_two_opt: 0.024 s
+***two_opt: 0.657 s
+***two_neighbour_swaps: 0.173 s
+***three_neighbour_swaps: 0.43 s
+***four_neighbour_swaps: 1.148 s
+***optimizeHeadings: 196.857 s

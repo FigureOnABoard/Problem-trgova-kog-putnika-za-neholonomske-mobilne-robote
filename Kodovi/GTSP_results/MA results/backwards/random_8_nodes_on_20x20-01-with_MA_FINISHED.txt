@@ -1,0 +1,3 @@
+Finished! Best solution: {7, 35, 66, 17, 113, 109, 59, 90, 7}
+cost: 305.105
+Total time: 104.543 s
