@@ -1,0 +1,5 @@
+Finished! Best solution: {0, 52, 40, 28, 0}
+cost: 213.712
+Execution time: 0.144581 s
+Execution time (OR-Tools): 0.00158119 s
+Execution time (Optimize headings): 0.143 s

@@ -1,0 +1,5 @@
+Finished! Best solution: {12, 182, 48, 64, 172, 83, 108, 130, 34, 21, 149, 118, 12}
+cost: 567.311
+Execution time: 2.77499 s
+Execution time (OR-Tools): 0.00499082 s
+Execution time (Optimize headings): 2.77 s

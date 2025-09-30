@@ -1,0 +1,5 @@
+Finished! Best solution: {10, 149, 19, 224, 189, 110, 206, 217, 73, 165, 243, 63, 141, 125, 45, 92, 10}
+cost: 485.962
+Execution time: 3.32663 s
+Execution time (OR-Tools): 0.00262761 s
+Execution time (Optimize headings): 3.324 s

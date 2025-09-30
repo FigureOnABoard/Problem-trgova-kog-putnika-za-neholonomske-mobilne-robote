@@ -1,0 +1,5 @@
+Finished! Best solution: {10, 154, 280, 58, 250, 186, 122, 312, 232, 75, 269, 32, 170, 24, 218, 105, 87, 130, 288, 207, 10}
+cost: 925.042
+Execution time: 10.8939 s
+Execution time (OR-Tools): 0.0078795 s
+Execution time (Optimize headings): 10.886 s

@@ -1,0 +1,5 @@
+Finished! Best solution: {3, 198, 36, 146, 68, 29, 135, 235, 174, 250, 122, 52, 210, 98, 81, 177, 3}
+cost: 667.671
+Execution time: 2.23884 s
+Execution time (OR-Tools): 0.00284243 s
+Execution time (Optimize headings): 2.236 s

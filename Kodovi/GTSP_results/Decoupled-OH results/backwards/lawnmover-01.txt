@@ -1,0 +1,5 @@
+Finished! Best solution: {5, 68, 132, 196, 262, 282, 221, 154, 166, 227, 294, 314, 252, 188, 124, 59, 106, 46, 18, 86, 5}
+cost: 796.874
+Execution time: 5.77283 s
+Execution time (OR-Tools): 0.0218282 s
+Execution time (Optimize headings): 5.751 s

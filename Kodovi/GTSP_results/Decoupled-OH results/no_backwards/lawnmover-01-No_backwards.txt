@@ -1,0 +1,5 @@
+Finished! Best solution: {9, 78, 140, 204, 270, 274, 213, 146, 174, 235, 302, 306, 244, 180, 114, 55, 102, 36, 28, 90, 9}
+cost: 865.749
+Execution time: 4.70356 s
+Execution time (OR-Tools): 0.00355792 s
+Execution time (Optimize headings): 4.7 s

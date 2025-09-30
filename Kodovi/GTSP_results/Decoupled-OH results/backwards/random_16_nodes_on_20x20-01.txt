@@ -1,0 +1,5 @@
+Finished! Best solution: {11, 206, 44, 154, 75, 22, 131, 238, 172, 250, 122, 61, 218, 106, 88, 185, 11}
+cost: 382.459
+Execution time: 2.74112 s
+Execution time (OR-Tools): 0.0031209 s
+Execution time (Optimize headings): 2.738 s

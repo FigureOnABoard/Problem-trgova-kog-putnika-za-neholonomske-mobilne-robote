@@ -1,0 +1,5 @@
+Finished! Best solution: {5, 20, 36, 51, 125, 108, 92, 75, 5}
+cost: 217.46
+Execution time: 0.559824 s
+Execution time (OR-Tools): 0.00182414 s
+Execution time (Optimize headings): 0.558 s

@@ -1,0 +1,5 @@
+Finished! Best solution: {4, 17, 50, 114, 45, 75, 106, 92, 4}
+cost: 310.387
+Execution time: 0.519872 s
+Execution time (OR-Tools): 0.0018723 s
+Execution time (Optimize headings): 0.518 s

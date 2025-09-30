@@ -1,0 +1,5 @@
+Finished! Best solution: {4, 114, 258, 302, 315, 56, 278, 230, 36, 241, 222, 202, 186, 150, 131, 16, 174, 94, 74, 103, 4}
+cost: 526.351
+Execution time: 7.54351 s
+Execution time (OR-Tools): 0.00350642 s
+Execution time (Optimize headings): 7.54 s

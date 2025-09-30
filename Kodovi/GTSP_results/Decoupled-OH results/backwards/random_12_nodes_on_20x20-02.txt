@@ -1,0 +1,5 @@
+Finished! Best solution: {2, 178, 52, 70, 167, 89, 104, 132, 34, 21, 150, 117, 2}
+cost: 399.094
+Execution time: 1.74046 s
+Execution time (OR-Tools): 0.00245667 s
+Execution time (Optimize headings): 1.738 s

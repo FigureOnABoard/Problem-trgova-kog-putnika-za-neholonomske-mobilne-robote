@@ -1,0 +1,5 @@
+Finished! Best solution: {2, 18, 49, 118, 38, 74, 106, 94, 2}
+cost: 299.432
+Execution time: 0.72986 s
+Execution time (OR-Tools): 0.0018599 s
+Execution time (Optimize headings): 0.728 s

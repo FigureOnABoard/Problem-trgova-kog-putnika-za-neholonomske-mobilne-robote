@@ -1,0 +1,5 @@
+Finished! Best solution: {3, 96, 83, 52, 116, 17, 66, 36, 3}
+cost: 315.374
+Execution time: 0.81637 s
+Execution time (OR-Tools): 0.0223696 s
+Execution time (Optimize headings): 0.794 s

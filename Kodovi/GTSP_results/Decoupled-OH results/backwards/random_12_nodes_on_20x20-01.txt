@@ -1,0 +1,5 @@
+Finished! Best solution: {3, 35, 147, 66, 30, 139, 170, 120, 52, 99, 81, 177, 3}
+cost: 326.424
+Execution time: 1.53623 s
+Execution time (OR-Tools): 0.00223422 s
+Execution time (Optimize headings): 1.534 s
