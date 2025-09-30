@@ -20,17 +20,17 @@ Program preuzima rješenje TSP-a i iz njega napravi rješenje GTSP-a koje ima is
 */
 
 /*
-Program se pokreće ovako: GTSP_Optimize_headings.exe datoteka1 datoteka2 [backwards_flag]
-gdje je "datoteka1" datoteka s podacima o problemu koju je napravio Cast_Data_Holder iz koje se definira problem, "datoteka2" datoteka u koju se sprema rješenja ovog programa,
+Program se pokreće ovako: GTSP_Optimize_headings.exe input_file output_file [backwards_flag]
+gdje je "input_file" datoteka s podacima o problemu koju je napravio Cast_Data_Holder iz koje se definira problem, "output_file" datoteka u koju se sprema rješenja ovog programa,
 a [backwards_flag] zastavica koja označava može li se robot kretati unatrag ili ne.
-"datoteka1" sadrži put do datoteke i sam naziv datoteke, npr. "results_costs/primjeri_za_usporedbu/paralel_order.txt"
-"datoteka2" sadrži samo naziv datoteke, npr. "paralel_order-res.txt". "datoteka2" će uvijek biti kreirana u "GTSP_results/Decoupled-OH results/"
+"input_file" sadrži put do datoteke i sam naziv datoteke, npr. "results_costs/primjeri_za_usporedbu/paralel_order.txt"
+"output_file" sadrži samo naziv datoteke, npr. "paralel_order-res.txt". "output_file" će uvijek biti kreirana u "GTSP_results/Decoupled-OH results/"
 Ako je [backwards_flag] jednak 0, ne može se kretati unatrag, a ako je 1 onda se može kretati unatrag. Ako se [backwards_flag] ne unese, automatski se postavlja na 1.
 
 Konačni rezultat će biti smješten u mapi "GTSP_results/Decoupled-OH results/backwards/" ili ""GTSP_results/Decoupled-OH results/no_backwards/", ovisno o vrijednosti
 [backwards_flag].
 
-Primjer: Ako se za "datoteka1" unese "results_costs/primjeri_za_usporedbu/paralel_order", za "datoteka2" unese "paralel_order-res.txt" te za "backwards_flag" unese "0",
+Primjer: Ako se za "input_file" unese "results_costs/primjeri_za_usporedbu/paralel_order", za "output_file" unese "paralel_order-res.txt" te za "backwards_flag" unese "0",
 podaci o problemu će se učitati iz "results_costs/primjeri_za_usporedbu/paralel_order", a rješenje će se spremiti u "GTSP_results/Decoupled-OH results/no_backwards/paralel_order-res.txt"
 */
 
@@ -125,12 +125,12 @@ double calculate_cost(vector<int> solution, Costs_Data_Holder &cdh, vector<vecto
 int main(int argc, char *argv[]) {
     if (argc < 3) {
         cerr << "GRESKA! Nedovoljno argumenata pri pozivu programa.\n";
-        cerr << "Program se pokreće ovako: GTSP_Optimize_headings.exe datoteka1 datoteka2 [backwards_flag]\n";
-        cerr << "gdje je \"datoteka1\" datoteka s podacima o problemu koju je napravio Cast_Daata_Holder iz koje se definira problem, ";
-        cerr << "a \"datoteka2\" datoteka u koju se sprema rješenja ovog programa.\n";
+        cerr << "Program se pokreće ovako: GTSP_Optimize_headings.exe input_file output_file [backwards_flag]\n";
+        cerr << "gdje je \"input_file\" datoteka s podacima o problemu koju je napravio Cast_Daata_Holder iz koje se definira problem, ";
+        cerr << "a \"output_file\" datoteka u koju se sprema rješenja ovog programa.\n";
         cerr << "\"backwards_flag\" je zastava koja iznačava može li se vozilo kretati unazad i može biti 0 ili 1.\n";
         cerr << "AKo je backwards_flag 0, onda se robot ne može kretati unatrag. Ako je 1, onda se može. Ako se \"backwards_flag\" ne unese, defaultno se postavlja na 1.\n";
-        cerr << "(Ako se sve duljine putanja nalaze u \"datoteka1\", onda je svejedno hoće li se unsti \"backwards_flag\" ili ne.)";
+        cerr << "(Ako se sve duljine putanja nalaze u \"input_file\", onda je svejedno hoće li se unsti \"backwards_flag\" ili ne.)";
         exit(1);
     }
     int backwards_flag = 1;
