@@ -9,12 +9,12 @@ Upute za pokretanje programa nalaze se u direktoriju "Upute za pokretanje".
 ## Sadržaj
 U direktoriju "Kodovi" nalaze se izvorni kodovi, izvršni kodovi, direktoriji za izlazne datoteke koje naprave izvršni kodovi i primjeri problema izrađenih tijekom izrade diplomskog rada.
 
-Izvorni kodovi se nalaze u datotekama "GTSP_Memetic_algorithm.cpp", "OR-Tools_TSP_solver.py" i "GTSP_Optimize_headings.cpp".
+Izvorni kodovi se nalaze u datotekama "GTSP_Memetic_algorithm.cpp", "OR-Tools_TSP_solver.py" i "GTSP_Optimize_headings.cpp". "GTSP_Memetic_algorithm.cpp" i "GTSP_Optimize_headings.cpp" implementiraju header file-ove koji se nalaze u istom direktoriju i potdirektorijima "headers" i "lattice_planner".
 
 Izvršni kodovi se nalaze u datotekama "GTSP_Memetic_algorithm.exe" i "GTSP_Optimize_headings.exe", a python datoteka se pokreće iz izvornog programa.
 
 U direktorij "generations", GTSP_Memetic_algorithm zapisuje podatke o svim generacijama koje je obradio i konačno rješenje.
 
-U direktorij GTSP_results, nalaze se rezuzltati dobiveni tijekom izrade diplomskog rada.
+U direktorij "GTSP_results", nalaze se rezuzltati dobiveni tijekom izrade diplomskog rada. Također, u njemu se automatksi spremaju rezultati programa OR-Tools_TSP_solver i GTSP_Optimize_headings.
 
 U "results_costs" i "results_path", nalaze se primjeri problema napravljeni u sklopu diplomksog rada.
